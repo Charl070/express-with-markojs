@@ -1,16 +1,4 @@
-<app-layout title="Lasso + Express">
-  <app-hello name=input.name/>
 
-  You have ${input.count} new messages!
-
-  <if(input.colors && input.colors.length)>
-    <ul>
-      <for|color| of=input.colors>
-        <li style={ color }>${color}</li>
-      </for>
-    </ul>
-  </if>
-  <else>
-    <div>No colors!</div>
-  </else>
-</app-layout>
+<div style="display: flex; justify-content: center; align-items: center;">
+   <p style="color: greenyellow; font-size: 16px;"> Hello  <span style="color: green;">${input.name}</span> </p>
+</div>
